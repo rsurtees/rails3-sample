@@ -1,9 +1,22 @@
 SampleApp::Application.routes.draw do
-  get "pages/home"
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  match '/',        :to => 'pages#home'
 
-  get "pages/contact"
+
+  #route             :to => "pages#home"
+
+  # about_path  => '/about'
+  # about_url   => 'http://localhost:3000/about'
+  # root_path   => '/'
+  # root_url    => 'http://localhost:3000/'
+
+  # get "pages/home"
+
+  # get "pages/contact"
   
-  get "pages/about"
+  # get "pages/about"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
