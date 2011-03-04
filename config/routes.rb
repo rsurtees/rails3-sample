@@ -7,10 +7,14 @@ SampleApp::Application.routes.draw do
 
   #route             :to => "pages#home"
 
-  # about_path  => '/about'
-  # about_url   => 'http://localhost:3000/about'
-  # root_path   => '/'
-  # root_url    => 'http://localhost:3000/'
+  about_path    = '/about'
+  about_url     = 'http://localhost:3000/about'
+  contact_path  = '/contact'
+  contact_url   = 'http://localhost:3000/contact'
+  help_path     = '/contact'
+  help_url      = 'http://localhost:3000/help'
+  home_path     = '/'
+  home_url      = 'http://localhost:3000/'
 
   # get "pages/home"
 
