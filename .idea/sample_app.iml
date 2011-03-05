@@ -30,7 +30,7 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="spork" version="0.8.4" bound="EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="spork" version="0.9.0.rc4" bound="EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source from="Gemfile" />
     </requirement>
@@ -89,6 +89,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /Users/robertsurtees/.rvm/gems/ruby-1.9.2-p180/gems/treetop-1.4.9)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sqlite3-ruby (v1.3.3, /Users/robertsurtees/.rvm/gems/ruby-1.9.2-p180/gems/sqlite3-ruby-1.3.3)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] spork (v0.8.4, /Users/robertsurtees/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.8.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] spork (v0.9.0.rc4, /Users/robertsurtees/.rvm/gems/ruby-1.9.2-p180/gems/spork-0.9.0.rc4)" level="application" />
   </component>
 </module>
 
