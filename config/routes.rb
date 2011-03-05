@@ -1,26 +1,13 @@
 SampleApp::Application.routes.draw do
+
+  root :to => "pages#home"
+  
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
-  match '/',        :to => 'pages#home'
-
-
-  #route             :to => "pages#home"
-
-  about_path    = '/about'
-  about_url     = 'http://localhost:3000/about'
-  contact_path  = '/contact'
-  contact_url   = 'http://localhost:3000/contact'
-  help_path     = '/contact'
-  help_url      = 'http://localhost:3000/help'
-  home_path     = '/'
-  home_url      = 'http://localhost:3000/'
-
-  # get "pages/home"
-
-  # get "pages/contact"
-  
-  # get "pages/about"
+  match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -39,12 +26,12 @@ SampleApp::Application.routes.draw do
   # Sample resource route with options:
   #   resources :products do
   #     member do
-  #       get 'short'
-  #       post 'toggle'
+  #       get :short
+  #       post :toggle
   #     end
   #
   #     collection do
-  #       get 'sold'
+  #       get :sold
   #     end
   #   end
 
@@ -58,7 +45,7 @@ SampleApp::Application.routes.draw do
   #   resources :products do
   #     resources :comments
   #     resources :sales do
-  #       get 'recent', :on => :collection
+  #       get :recent, :on => :collection
   #     end
   #   end
 
